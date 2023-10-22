@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+}
+.primarySection {
+  height: 100vh;
+  background-color: #a7563f;
+  position: relative;
+}
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+}
+.itemLine h2 {
+  font-size: clamp(1.875rem, -0.0781rem + 6.25vw, 3.4375rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 160px;
+}
+.itemLine span {
+  font-size: clamp(3.125rem, 0rem + 10vw, 5.625rem);
+  font-weight: 900;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.itemLine {
+  position: relative;
+  margin-left: 110px;
+
+  color: #f7f7f7;
+}
+.secondLine {
+  font-size: clamp(1rem, 0.8438rem + 0.5vw, 1.125rem);
+  margin-left: 4px;
+  line-height: 1.6;
+  max-width: 550px;
+}
+.viewButton {
+  padding: 8px 28px;
+  border: none;
+  border-radius: 25px;
+  margin-top: 20px;
+  background-color: #824331;
+}
+.viewButton a {
+  cursor: pointer;
+  color: #f7f7f7;
+  font-weight: 600;
+  text-decoration: none;
+}
+.imageDisplay {
+  position: relative;
+  margin-top: 105px;
+  margin-right: 120px;
+}
+.nutriboost {
+  max-height: 450px;
+}
+.addons {
+  position: absolute;
+  top: 20px;
+  right: -60px;
+}
+.addons img {
+  max-height: 450px;
+  transition: ease 0.15s;
+}
+.imageWrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.imagePicker {
+  display: flex;
+}
+.imagePicker img {
+  height: 90px;
+  transition: ease 0.15s;
+  padding: 0 6px;
+}
+.imagePicker img:hover {
+  transform: translateY(-20px) scale(1.3);
+}
+
+/*/////////////////////////////*/

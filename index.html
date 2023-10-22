@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NutriBoost</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handjet:wght@400;700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/secondary.css" />
+    <link rel="stylesheet" href="styles/tertiary.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/media.css">
+  </head>
+  <body>
+    <section class="js-primary primarySection" id="js-primary">
+      <div class="nav">
+        <img src="images/logo.png" class="logo" />
+        <ul class="menu js-menu">
+            <li>
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="#products" class="nav-link">Products</a>
+            </li>
+            <li>
+              <a href="#contacts"class="nav-link">Contact</a>
+            </li>
+            <li>
+              <a href="#aboutus"class="nav-link">About Us</a>
+            </li>
+          </ul>
+        </ul>
+        <div class="hamburger js-hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+      
+      <div class="content">
+        <div class="itemLine">
+          <h2>Gotta stay</h2>
+          <span>boosted!</span>
+          <p class="secondLine">
+            Nutriboost is a delicious flavored drink with milk and nutrients to help you stay active and healthy.
+          </p>
+          <button class="js-viewButton viewButton">
+            <a href="#products">View Products</a>
+          </button>
+        </div>
+
+        <div class="imageDisplay">
+          <img
+            src="images/nutriboost003.png"
+            class="js-nutriboost nutriboost"
+          />
+          <div class="addons">
+            <img src="images/fallingchoco.png" class="js-addons" />
+          </div>
+        </div>
+      </div>
+
+      <div class="imageWrapper">
+        <div class="imagePicker">
+          <img
+            src="images/nutriboost001.png"
+            onclick="
+            imageSlider('images/nutriboost001.png');
+            changeAddOns('images/fallingberry.png'); 
+            changeBgColor('#ff8067');
+            changeButtonColor('#ff5534');"
+          />
+          <img
+            src="images/nutriboost002.png"
+            onclick="
+            imageSlider('images/nutriboost002.png');
+            changeAddOns('images/fallingoranges.png'); 
+            changeBgColor('#fa8128');
+            changeButtonColor('#ea6605');"
+          />
+          <img
+            src="images/nutriboost003.png"
+            onclick="
+            imageSlider('images/nutriboost003.png');
+            changeAddOns('images/fallingchoco.png'); 
+            changeBgColor('#a7563f');
+            changeButtonColor('#824331');"
+          />
+        </div>
+      </div>
+      
+    </section>
+
+    <!---->
+    <section class="secondarySection" id="products">
+      <p class="producttitle">Products</p>
+      <div class="cardWrapper">
+        <div class="card">
+          <img src="images/nutriboost001.png" />
+        </div>
+        <div class="aboutProduct">
+          <h2>Nutriboost strawberry</h2>
+          <p>
+            Nutriboost Strawberry is a refreshingly deliciousmilk-based
+            drink in creamy fruit flavors with
+            essential vitamins and minerals to boost
+            your stamina everyday.
+          </p>
+        </div>
+      </div>
+
+      <div class="cardWrapper"  id="aboutOrange">
+        <div class="aboutProduct">
+          <h2>Nutriboost orange</h2>
+          <p>
+            Nutriboost Orange is a refreshingly delicious milk-based
+            drink in creamy fruit flavors with essential
+            vitamins and minerals to boost your
+            stamina everyday.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/nutriboost002.png" />
+        </div>
+      </div>
+
+      <div class="cardWrapper">
+        <div class="card">
+          <img src="images/nutriboost003.png" />
+        </div>
+        <div class="aboutProduct">
+          <h2>Nutriboost chocolate milk</h2>
+          <p>
+            Nutriboost Chocolate Milk is a refreshingly delicious
+            milk-based drink with essential vitamins
+            and minerals to boost your stamina everyday.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tertiary" id="contacts">
+      <h1>Gotta stay boosted</h1>
+      <p>
+        Nutriboost is a delicious flavored drink with milk and nutrients to help
+        you stay active and healthy.
+      </p>
+      <div class="contacts">
+          <h2>Follow Nutriboost</h2>
+        <div class="contactIcons">
+          <div>
+            <ion-icon name="logo-facebook"></ion-icon>
+          </div>
+          <div>
+            <ion-icon name="logo-instagram"></ion-icon>
+          </div>
+          <div>
+            <ion-icon name="logo-twitter"></ion-icon>
+          </div>
+          <div>
+            <ion-icon name="logo-youtube"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="aboutus">
+      <div class="footerBg">
+        <img src="images/logo2.png" class="logo2" />
+        <button class="location">
+          <a href=""
+            ><ion-icon name="location-outline"></ion-icon>Philippines</a
+          >
+        </button>
+        <div class="columnFooter">
+          <div class="columnAbout">
+            <h5 class="pHead">ABOUT US</h5>
+            <p>Our Company</p>
+            <p>Media Center</p>
+            <p>History</p>
+            <p>Careers</p>
+          </div>
+          <div class="columnAbout">
+            <h5 class="pHead">NEED HELP?</h5>
+            <p>FAQ</p>
+            <p>Contact Us</p>
+            <p>Sitemap</p>
+          </div>
+          <div class="columnAbout">
+            <h5 class="pHead">LEGAL</h5>
+            <p>Terms of Use</p>
+            <p>Privacy Policy</p>
+            <p>Cookie Policy</p>
+          </div>
+        </div>
+      </div>
+      <hr class="hr1" />
+      <hr class="hr2" />
+      <p class="rightp">
+        &#169 2023 The Coca‑Cola Company. All rights reserved.
+      </p>
+    </footer>
+
+    
+    <script src="script/index.js"></script>
+  </body>
+</html>
